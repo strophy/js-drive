@@ -5,8 +5,8 @@ describe('Validator', () => {
   describe('createFromQuorumMember', () => {
     it('should create an instance from quorum member info', () => {
       const memberInfo = {
-        proTxHash: Buffer.alloc(0, 32).toString('hex'),
-        pubKeyShare: Buffer.alloc(1, 32).toString('hex'),
+        proTxHash: Buffer.alloc(1, 32).toString('hex'),
+        pubKeyShare: Buffer.alloc(2, 32).toString('hex'),
       };
 
       const instance = Validator.createFromQuorumMember(memberInfo);
